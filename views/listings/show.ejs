@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+</head>
+<body>
+    <h1>Show Tasks</h1>
+    <ul>
+        <li><%=allTasks.title%></li>
+        <li><%=allTasks.description%></li>
+        <li><%=allTasks.priority%></li>
+    </ul>
+    <a href="/tasks/<%=allTasks._id%>/edit">Edit task</a>
+    <form method="post" action="/tasks/<%=allTasks._id%>?_method=DELETE">
+        <button>Delete</button>
+    </form>
+</body>
+</html>

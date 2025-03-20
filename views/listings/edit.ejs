@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+</head>
+<body>
+    <h1>Update Task</h1>
+    <form method="post" action="/tasks/<%=allTasks.id%>?_method=PUT">
+        <input name="newtask[Title]" value="<%=allTasks.title%>" type="text">
+        <hr>
+        <input name="newtask[Description]" value="<%=allTasks.description%>" type="text">
+        <hr>
+        <input name="newtask[Priority]" value="<%=allTasks.priority%>" type="text">
+        <hr>
+        <button>Update Task</button>
+    </form>
+</body>
+</html>
